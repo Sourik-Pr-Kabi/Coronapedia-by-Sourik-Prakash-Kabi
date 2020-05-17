@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About us</title>
+        <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
+
+        <style>
+          
+          .container-fluid{
+            border: silver;
+            border-width: 10px;
+            border-style: ridge;
+            padding: 70px;
+          }
+        
+          body {
+            background: url(gray.png) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+          }
+       
+          a {
+            margin: 8px;
+            -webkit-transition: color 0.5s;
+            transition: color 0.5s;
+          }
+
+          a:hover {
+            color: #ff0000;
+            font-family: 'Syncopate', sans-serif;
+          }
+
+        </style>
+
+        <script>
+
+          function f1()
+          {
+            s1 = document.getElementById("home").value;
+            document.getElementById("home").style.fontWeight = 'bold';
+            document.getElementById("home").style.fontStretch = 'expanded';
+          }
+
+          function f2()
+          {
+            s1 = document.getElementById("registration").value;
+            document.getElementById("registration").style.fontWeight = 'bold';
+            document.getElementById("registration").style.fontStretch = 'expanded';
+          }
+
+          function f3()
+          {
+            s1 = document.getElementById("login").value;
+            document.getElementById("login").style.fontWeight = 'bold';
+            document.getElementById("login").style.fontStretch = 'expanded';
+          }
+
+          function f4()
+          {
+            s1 = document.getElementById("aboutus").value;
+            document.getElementById("aboutus").style.fontWeight = 'bold';
+            document.getElementById("aboutus").style.fontStretch = 'expanded';
+          }
+
+        </script>
+
+    </head>
+    
+    <body>
+        <div class="container-fluid">
+            <img class="img-responsive" src="About-Me.png" height="150" width="600"> &nbsp;&nbsp; 
+            <!--<div align="right">
+                <h1>
+                    Hello!
+                    <small class="text-muted">I am Sourik Prakash Kabi</small>
+                </h1>
+            </div>-->
+            <br><br><br>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+              <ul class="nav nav-pills nav-justified">
+                  <li class="nav-item">
+                    <a class="nav-link" id="home" onclick="f1()" href="home.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="registration" onclick="f2()" href="registration.html">REGISTRATION</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="login" onclick="f3()" href="login.html">LOGIN</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" id="aboutus" onclick="f4()" href="aboutus.html">AUTHOR</a>
+                  </li>
+              </ul>
+            </nav>
+            <br><br>
+            <div class="container">
+              <h1>The creator of this webpage:</h1>
+              <p><h4>A third year engineering student who loves Web Development because there's always a chance of learning and improvisisng in it.</h4></p><br>
+              <div class="card" style="width:400px">
+                <img class="card-img-top" src="IMG_1303.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Sourik Prakash Kabi</h4><br>
+                  <p class="card-text"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;sourikkabi48@gmail.com</p>
+                  <p class="card-text"><span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;&nbsp;+91 7031355074</p>
+                  <p class="card-text"><span class="glyphicon glyphicon-education"></span>&nbsp;&nbsp;&nbsp;Asansol Engineering College</p>
+                  
+                  
+                  <button class="btn btn-dark btn-block"><a href="https://www.linkedin.com/in/sourik-pr-kabi/">See LinkedIn Profile</a><br></button>
+                  <button class="btn btn-dark btn-block"><a href="CV_SPKtimebeing.pdf">Download Resume</a><br></button>
+                </div>
+              </div>
+            </div>
+                
+        </div>
+    </body>
+</html>

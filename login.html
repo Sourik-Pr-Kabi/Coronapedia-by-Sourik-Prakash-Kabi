@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOG IN or SIGN UP</title>
+        <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
+
+        <style>
+          .container-fluid{
+            border: silver;
+            border-width: 10px;
+            border-style: ridge;
+            padding: 70px;
+          }
+
+          body {
+            background: url(gray.png) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+          }
+
+         .display-4{
+            font-size: 50px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          }
+
+          a {
+            margin: 8px;
+            -webkit-transition: color 0.5s; /* For Safari 3.0 to 6.0 */
+            transition: color 0.5s; /* For modern browsers */
+          }
+    
+          a:hover {
+            color: #ff0000;
+            font-family: 'Syncopate', sans-serif;
+          }
+
+          .text-dark{
+            font-weight: bolder;
+          }
+
+          small{
+            font-weight: bold;
+          }
+
+        </style>
+
+        <script>
+
+          function f1()
+          {
+            s1 = document.getElementById("home").value;
+            document.getElementById("home").style.fontWeight = 'bold';
+            document.getElementById("home").style.fontStretch = 'expanded';
+          }
+
+          function f2()
+          {
+            s1 = document.getElementById("registration").value;
+            document.getElementById("registration").style.fontWeight = 'bold';
+            document.getElementById("registration").style.fontStretch = 'expanded';
+          }
+
+          function f3()
+          {
+            s1 = document.getElementById("login").value;
+            document.getElementById("login").style.fontWeight = 'bold';
+            document.getElementById("login").style.fontStretch = 'expanded';
+          }
+
+          function f4()
+          {
+            s1 = document.getElementById("aboutus").value;
+            document.getElementById("aboutus").style.fontWeight = 'bold';
+            document.getElementById("aboutus").style.fontStretch = 'expanded';
+          }
+
+        </script>
+        
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            
+            <img class="img-responsive" src="log.png" height="140" width="450"> &nbsp;&nbsp; 
+            <div align="right">
+                <h1 class="display-4">
+                    New user?
+                    <small class="text-dark"><a href="registration.html">Click here</a></small>
+                </h1>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+              <ul class="nav nav-pills nav-justified">
+                  <li class="nav-item">
+                    <a class="nav-link" id="home" onclick="f1()" href="home.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="registration" onclick="f2()" href="registration.html">REGISTRATION</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" id="login" onclick="f3()" href="login.html">LOGIN</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="aboutus" onclick="f4()" href="aboutus.html">AUTHOR</a>
+                  </li>
+              </ul>
+            </nav>
+            <br><br><br><br>
+            <div class="row">
+                <div class="col-md-6 col-sm-8 mx-auto">
+                     <div class="card">
+                         <div class="card-body" style="background-color: #3b3b3d">
+                               <div class="mt-4 text-left">
+                                 <form name='login'>
+                                    <div class="form-group">
+                                       <label for="email" class="text-uppercase font-weight-bold text-primary">Email Id</label>
+                                       <input type="email" name="email" class="form-control" placeholder="Enter Email Id" >
+                                   </div>
+                                   <br>
+                                                                              
+                                   <div class="form-group">
+                                        <label for="password" class="text-uppercase font-weight-bold text-primary">Password</label>
+                                        <input type="password" name="password" class="form-control" placeholder="Enter Password" >
+                                   </div>
+                                   <br>           
+                                   <input type="submit" class="btn btn-success btn-block" value="LOGIN">
+                                   <br>
+                               </form>
+                             </div>
+                        </div>
+                    </div>
+                 </div>
+               </div>
+           </div> 
+        </div>    
+    </body>
+</html>
