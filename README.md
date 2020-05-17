@@ -16,4 +16,7 @@ I'm a student and my web development skills needs much more perfection. I'll gla
 Do mail me: sourikkabi48@gmail.com
 
 Enjoy the website!!
+
+Webiste link:  https://sourik-pr-kabi.github.io/Coronapedia-by-Sourik-Prakash-Kabi/home.html
+
 Thank You
